@@ -7,6 +7,7 @@ function generatePassword(length: number): string {
     }
     return password;
 }
+document.querySelector('#pass').innerHTML = generatePassword(12);
 
 function getPasswordStrength(password: string): number {
     let strength: number = 0;

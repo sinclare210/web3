@@ -7,6 +7,7 @@ function generatePassword(length) {
     }
     return password;
 }
+document.querySelector('#pass').innerHTML = generatePassword(12);
 function getPasswordStrength(password) {
     var strength = 0;
     // Check length
